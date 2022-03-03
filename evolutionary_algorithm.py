@@ -2,6 +2,7 @@
 '''Created by hosein-khanalizadeh'''
 
 import random
+# import csv
 import matplotlib.pyplot as plt
 
 
@@ -74,17 +75,26 @@ def mutation(nerkh):
         is_mutation = False
     return is_mutation
 
-data = list()
+
 ai = list()
 y0 = 0
 sum_fit = 0
 cross = list()
 all_fit_list = list()
 
+data = list()
 f = open('data.txt', 'r+')
 file = f.read().splitlines()
 for m in range(len(file)):
     data.append(file[m].split(';'))
+
+# data = list()
+# file = open('test_label.csv' , 'r')
+# test_label_reader = csv.reader(file)
+# for row in test_label_reader:
+#     for i in row:
+#         data.append(float(i))
+# file.close()
 
 fg = first_generation()
 for q in range(10):
