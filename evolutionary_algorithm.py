@@ -89,7 +89,7 @@ for m in range(len(file)):
     data.append(file[m].split(';'))
 
 # data = list()
-# file = open('test_label.csv' , 'r')
+# file = open('winequality-red.csv' , 'r')
 # test_label_reader = csv.reader(file)
 # for row in test_label_reader:
 #     for i in row:
